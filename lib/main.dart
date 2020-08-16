@@ -2,10 +2,15 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:covid_1/data/data.dart';
+import 'package:flutter/cupertino.dart';
+import 'login.dart';
 
 void main(){
   runApp(MaterialApp(
     home: Home(),
+    //routes: <String, WidgetBuilder>{
+    //  '/login': (BuildContext context) => new LoginPage()
+    //},
     debugShowCheckedModeBanner: false,
   ));
 }
@@ -88,14 +93,21 @@ class _HomeState extends State<Home> {
         width: MediaQuery.of(context).size.width ,
         height: Platform.isAndroid ? 50:50,
         color: '7777FF'.toColor(),
-        child: Text(
+        child: InkWell(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => LoginPage()),
+            );
+          },
+          child: Text(
             'GET STARTED NOW',
-          style: TextStyle(
-            color: Colors.black54,
-            fontWeight: FontWeight.w600,
+            style: TextStyle(
+              color: Colors.black54,
+              fontWeight: FontWeight.w600,
+            ),
           ),
-        ),
-
+        )
       ),
     );
   }
