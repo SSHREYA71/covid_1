@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'signup.dart';
@@ -8,6 +9,16 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+
+  final FirebaseAuth _auth = FirebaseAuth.instance;
+  String email, password;
+
+  void _signIn({String em, String pw}) {
+    _auth.signInWithEmailAndPassword(email: em, password: pw).then((authResult) => {
+      //Navigator.pushReplacementNamed(context, '/home'),
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -56,6 +67,11 @@ class _LoginPageState extends State<LoginPage> {
                 child: Column(
                   children: <Widget>[
                     TextField(
+                      onChanged: (textVal) {
+                      setState(() {
+                        email = textVal;
+                      });
+                    },
                       decoration: InputDecoration(
                           labelText: 'EMAIL',
                           labelStyle: TextStyle(
@@ -66,6 +82,11 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     SizedBox(height: 20.0),
                     TextField(
+                      onChanged: (textVal) {
+                      setState(() {
+                        password = textVal;
+                      });
+                    },
                       decoration: InputDecoration(
                           labelText: 'PASSWORD',
                           labelStyle: TextStyle(
@@ -98,8 +119,10 @@ class _LoginPageState extends State<LoginPage> {
                         shadowColor: Color(0xFF437F97),
                         color: Color(0xFF7777FF),
                         elevation: 7.0,
-                        child: GestureDetector(
-                          onTap: () {},
+                        child: InkWell(
+                          onTap: () {
+                            _signIn(em: email, pw: password);
+                          },
                           child: Center(
                             child: Text(
                               'LOGIN',
