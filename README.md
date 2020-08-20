@@ -25,7 +25,7 @@
 
 This app is made using flutter.
 
-![Login page](./assets/images/loginpage.png)
+![Login page](./assets/images/screenshots/loginpage.png)
 
 **PROBLEMS FACED**
 
