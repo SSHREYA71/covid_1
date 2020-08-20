@@ -15,7 +15,7 @@ class _LoginPageState extends State<LoginPage> {
 
   void _signIn({String em, String pw}) {
     _auth.signInWithEmailAndPassword(email: em, password: pw).then((authResult) => {
-      //Navigator.pushReplacementNamed(context, '/home'),
+      Navigator.pushReplacementNamed(context, '/home'),
     });
   }
 

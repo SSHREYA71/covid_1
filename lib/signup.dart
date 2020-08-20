@@ -16,7 +16,7 @@ class _SignupPageState extends State<SignupPage> {
 
   void _createUser({String email, String pw}) {
     _auth.createUserWithEmailAndPassword(email: email, password: pw).then((authResult) => {
-      //Navigator.pushReplacementNamed(context, '/home'),
+      Navigator.pushReplacementNamed(context, '/home'),
     });
   }
 
