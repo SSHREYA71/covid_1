@@ -1,15 +1,14 @@
 # COVID COMPANION
 
 **DEVELOPERS :** 
-* RAHUL SINHA
-* ANUBHAV SINHA[Link](https://sinha-anubhav79.github.io/)
+* [RAHUL SINHA](https://github.com/viroin)
+* [ANUBHAV SINHA](https://sinha-anubhav79.github.io/)
 * SHREYA
 * SAHIL
 
 
 **FEATURES**
 * [x] Remind you to wear a mask whenever you go out.
-* [x] Notify you whenever you come near an contaminated area.
 * [x] Display the nearby cases of your locality.
 * [x] Answer the most Frequently Asked Questions.
 * [x] Show the DOs and DON'Ts when you go out or reach an contaminated zone.
@@ -26,7 +25,7 @@
 
 This app is made using flutter.
 
-![Part3](./images/part3.gif)
+![Login page](./assets/images/loginpage.png)
 
 **PROBLEMS FACED**
 
