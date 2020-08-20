@@ -1,8 +1,8 @@
 # COVID COMPANION
 
 **DEVELOPERS :** 
-* [RAHUL SINHA](https://github.com/viroin)
-* [ANUBHAV SINHA](https://sinha-anubhav79.github.io/)
+* [RAHUL SINHA](https://github.com/viroinrahul)
+* [ANUBHAV SINHA](https://github.com/sinha-anubhav79)
 * SHREYA
 * SAHIL
 
@@ -25,7 +25,7 @@
 
 This app is made using flutter.
 
-![Login page](./assets/images/screenshots/loginpage.png)
+![Login page](./assets/screenshots/loginpage.png)
 
 **PROBLEMS FACED**
 
