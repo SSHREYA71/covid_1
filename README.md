@@ -1,16 +1,41 @@
-# covid_1
+# COVID COMPANION
 
-first try of covid companion app
+**DEVELOPERS :** 
+* RAHUL SINHA
+* ANUBHAV SINHA[Link](https://sinha-anubhav79.github.io/)
+* SHREYA
+* SAHIL
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+**FEATURES**
+* [x] Remind you to wear a mask whenever you go out.
+* [x] Notify you whenever you come near an contaminated area.
+* [x] Display the nearby cases of your locality.
+* [x] Answer the most Frequently Asked Questions.
+* [x] Show the DOs and DON'Ts when you go out or reach an contaminated zone.
+* [x] Save your travel history for 2 weeks.
+* [x] Remind you to wash your hands time to time.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+**TECH STACK**
+* Development toolkit : Flutter
+* Language : dart
+* Backend-as-a-Service : Firebase
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**DESCRIPTION (About Project)**
+
+This app is made using flutter.
+
+![Part3](./images/part3.gif)
+
+**PROBLEMS FACED**
+
+After resolving all these problems the third part became an easy task.
+
+**SCOPE OF IMPROVEMENT**
+
+Maps section can be improved
+
+**WHAT YOU LEARNED?**
+
+I learnt a lot of new things while making this project.
