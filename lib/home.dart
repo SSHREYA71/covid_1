@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:covid_1/stats.dart';
-
+import 'package:covid_1/travel.dart';
 
 class Home extends StatefulWidget {
   // This widget is the root of your application.
@@ -13,7 +13,7 @@ class _HomeState extends State<Home> {
   final List _screens = [
     Statistic(),
     Scaffold(),
-    Scaffold(),
+    Travel(),
     //Account()
 
   ];

@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:covid_1/map_page.dart';
 import 'package:covid_1/onBoardingScreens.dart';
 import 'package:covid_1/home.dart';
 import 'package:flutter/material.dart';
@@ -11,6 +12,7 @@ void main(){
       "/": (context) => OnBoardingScreens(),
       "/auth": (context) => LoginPage(),
       "/home": (context) => Home(),
+      "/travel_map": (context) => MapPage()
 
     },
 
