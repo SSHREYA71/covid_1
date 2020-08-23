@@ -4,6 +4,7 @@ import 'package:covid_1/mostAffectedState.dart';
 import 'package:covid_1/stateWiseData.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:covid_1/colEx.dart';
 
 class Statistic extends StatefulWidget {
   @override
@@ -42,11 +43,9 @@ class _StatisticState extends State<Statistic> {
         backgroundColor: Colors.grey[200] ,
         appBar: AppBar(
           centerTitle: true,
-          title:Text("COVID-19 Statistics",style: TextStyle(fontWeight: FontWeight.bold),),
-          backgroundColor:Colors.lightBlue,
+          title:Text("COVID-19 Statistics",style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, letterSpacing: 1.0),),
           elevation:0,
-          leading:
-          Image.asset("assets/images/covCompicon.png"),
+          backgroundColor: Colors.indigo[400],
         ),
         body: stateData==null?Center(child:CircularProgressIndicator()):
 

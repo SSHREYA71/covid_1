@@ -26,9 +26,8 @@ class _StateInfoState extends State<StateInfo> {
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title:Text("Statewise Information",style: TextStyle(
-            fontWeight: FontWeight.bold,
-          ),),
+          backgroundColor: Colors.indigo[400],
+          title: Text("State-wise Covid-19 Data",style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),),
         ),
         body:stateData==null?Center(child:CircularProgressIndicator()): ListView.builder (
           itemBuilder:( context,index){

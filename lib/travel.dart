@@ -13,8 +13,10 @@ class _TravelState extends State<Travel> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Travel'),
-        backgroundColor: Color(0xFF7777FF),
+        title:Text("Travel History",style:TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0, letterSpacing: 1.0,
+        )),
+        backgroundColor: Colors.indigo[400],
+        centerTitle: true,
       ),
       body: Container(
         child: Center(
@@ -27,9 +29,10 @@ class _TravelState extends State<Travel> {
                     child: Column(
                       children: [
                         Text(
-                          'Disclaimer',
+                          'DISCLAIMER!!!',
                           style: TextStyle(
                             color: Colors.white,
+                            fontSize: 20.0,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -57,10 +60,14 @@ class _TravelState extends State<Travel> {
                   ),
                 ],
               ),
-              SizedBox(height: 100,),
+              SizedBox(height: 70,),
               FlatButton(
-                color: Colors.green,
-                child: Text('Start my journey'),
+                color: Colors.green[100],
+                child: Text("Start My Journey"
+                    ,
+                    style:TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.green,)),
                 onPressed: () {
                   showDialog(
                     context: context,
@@ -68,7 +75,7 @@ class _TravelState extends State<Travel> {
                       return AlertDialog(
                         title: Column(
                           children: [
-                            Image.asset('assets/images/mask.png'),
+                            Image.asset('assets/social_distancing.png'),
                             Text('Remember to wear a mask!')
                           ],
                         ),
@@ -76,7 +83,7 @@ class _TravelState extends State<Travel> {
                           FlatButton(
                             child: new Text("OK"),
                             onPressed: () {
-                              Navigator.pushNamed(context, "/travel_map");
+                              Navigator.pushReplacementNamed(context, "/travel_map");
                             },
                           ),
                         ],
@@ -85,11 +92,37 @@ class _TravelState extends State<Travel> {
                   );
                 },
               ),
-              SizedBox(height: 15,),
+              SizedBox(height: 12,),
               FlatButton(
-                color: Colors.green,
-                child: Text('End journey'),
-                onPressed: () {},
+                color: Colors.red[100],
+                child: Text("End Journey"
+                    ,
+                    style:TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.red,)),
+                onPressed: () {
+                  showDialog(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return AlertDialog(
+                        title: Column(
+                          children: [
+                            Image.asset('assets/social_distancing.png'),
+                            Text("Your Travel History is saved & is safe with us!\nWe will now stop accessing your location data.")
+                          ],
+                        ),
+                        actions: <Widget>[
+                          FlatButton(
+                            child: new Text("OK"),
+                            onPressed: () {
+                              Navigator.pushReplacementNamed(context, "/account");
+                            },
+                          ),
+                        ],
+                      );
+                    },
+                  );
+                },
               ),
             ],
           ),
