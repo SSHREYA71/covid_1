@@ -9,11 +9,9 @@
 
 **FEATURES**
 * [x] Remind you to wear a mask whenever you go out.
-* [x] Display the nearby cases of your locality.
 * [x] Answer the most Frequently Asked Questions.
 * [x] Show the DOs and DON'Ts when you go out or reach an contaminated zone.
 * [x] Save your travel history for 2 weeks.
-* [x] Remind you to wash your hands time to time.
 
 
 **TECH STACK**
@@ -23,18 +21,6 @@
 
 **DESCRIPTION (About Project)**
 
-This app is made using flutter.
+The app takes basic informations like email while signing up. Once you sign up, you can login with the registered email and password. Once you login, you are directed to the home page where the nation-wide covid statistics are displayed. There a button 'All States' tapping which shows detailed state-wise covid data. There four differnt tab to navigate to - Home, Info, Travel and Account tab. The Info tab shows various information regarding the on-going corona pandemic like Symptoms, Prevention methods, FAQs, DOs & DON'Ts and Myths reagarding the corona virus. The Travel tab helps you travel safely as it saves your travel data for 14 days so that it can be refernced in future for back tracing, which will keep you and others in your surroundings safe. The accounts tab has basic info about the app and a 'signout' button for you to logout.
 
-![Login page](./assets/screenshots/loginpage.png)
-
-**PROBLEMS FACED**
-
-After resolving all these problems the third part became an easy task.
-
-**SCOPE OF IMPROVEMENT**
-
-Maps section can be improved
-
-**WHAT YOU LEARNED?**
-
-I learnt a lot of new things while making this project.
+![Login page](covComp04.mp4)
